@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>תיק עבודות — Shapo Digital</title>
+  <meta name="description" content="פרויקטים נבחרים של שאפו דיגיטל — אתרים, קמפיינים והפקות." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/shapo-logo.jpg" />
+  <style>
+    .portfolio-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(340px,1fr)); gap:28px; }
+    .portfolio-card { background:var(--grad-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); overflow:hidden; transition:all 0.45s cubic-bezier(0.4,0,0.2,1); }
+    .portfolio-card:hover { transform:translateY(-8px); border-color:var(--border-mid); box-shadow:var(--shadow-card); }
+    .portfolio-img { height:240px; background:linear-gradient(135deg,#16161b,#1e1e24); display:flex;align-items:center;justify-content:center; position:relative; overflow:hidden; }
+    .portfolio-img .badge { position:absolute; top:16px; right:16px; background:rgba(10,10,12,0.8); border:1px solid var(--border-mid); border-radius:100px; padding:6px 14px; font-size:0.8rem; color:var(--silver-bright); font-weight:600; }
+    .portfolio-img span.site { font-family:var(--font-display); font-size:1.4rem; color:var(--silver); letter-spacing:0.05em; }
+    .portfolio-body { padding:28px; }
+    .portfolio-body h3 { font-size:1.3rem; margin-bottom:8px; }
+    .portfolio-body p { color:var(--text-secondary); font-size:0.98rem; }
+    .portfolio-tags { display:flex; gap:8px; flex-wrap:wrap; margin-top:16px; }
+    .portfolio-tags span { font-size:0.78rem; color:var(--silver-dim); border:1px solid var(--border-subtle); border-radius:100px; padding:4px 12px; }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/shapo-logo.jpg" alt="Shapo Digital" /> <span class="brand-wordmark" aria-label="Shapo Digital">
+          <span class="brand-main"><span>S</span><span>H</span><span>A</span><span>P</span><span>O</span></span>
+          <span class="brand-sub">DIGITAL</span>
+          <span class="brand-signature">Michel Zvigi</span>
+        </span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">בית</a></li>
+        <li><a href="services.html">שירותים</a></li>
+        <li><a href="web.html">בניית אתרים</a></li>
+        <li><a href="video.html">הפקת וידאו</a></li>
+        <li><a href="courses.html">קורסים</a></li>
+        <li><a href="about.html">אודות</a></li>
+        <li><a href="contact.html" class="nav-cta">צור קשר</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="תפריט"><span></span><span></span><span></span></button>
+    </div>
+  </nav>  <header class="page-hero">
+    <div class="hero-glow"></div>
+    <div class="container">
+      <span class="section-tag reveal">תיק עבודות</span>
+      <h1 class="reveal">פרויקטים ש<span class="gradient-text">מדברים בעד עצמם</span></h1>
+      <p class="reveal">מבחר מהעבודות שלנו — כל אחת בנויה לביצועים ומעוצבת לרושם.</p>
+    </div>
+  </header>
+  <section style="padding-top:40px;">
+    <div class="container">
+      <div class="portfolio-grid">
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img"><span class="badge">Serverless Edge</span><span class="site">liat-malka.co.il</span></div>
+          <div class="portfolio-body">
+            <h3>ליאת מלכה — ייעוץ משכנתאות</h3>
+            <p>דף נחיתה בארכיטקטורת Serverless Edge — מהירות טעינה מטורפת, עיצוב חם ומזמין והמרות גבוהות.</p>
+            <div class="portfolio-tags"><span>בניית אתר</span><span>Serverless Edge</span><span>UI/UX</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img"><span class="badge">Social</span><span class="site">קמפיין סושיאל</span></div>
+          <div class="portfolio-body">
+            <h3>ניהול קמפיינים בסושיאל</h3>
+            <p>אסטרטגיית תוכן וניהול קמפיינים שהביאו לצמיחה משמעותית במעורבות ובלידים.</p>
+            <div class="portfolio-tags"><span>Instagram</span><span>Facebook</span><span>קריאייטיב</span></div>
+          </div>
+        </div>
+        <div class="portfolio-card reveal">
+          <div class="portfolio-img"><span class="badge">AI Video</span><span class="site">הפקת וידאו AI</span></div>
+          <div class="portfolio-body">
+            <h3>סרטוני מותג מבוססי AI</h3>
+            <p>סדרת סרטונים קולנועיים שנוצרו בעזרת בינה מלאכותית — תוכן ויראלי בקנה מידה.</p>
+            <div class="portfolio-tags"><span>AI</span><span>Video</span><span>Branding</span></div>
+          </div>
+        </div>
+      </div>
+            <div class="section-header" style="margin-top:90px;">
+        <span class="section-tag reveal">הפקות וידאו</span>
+        <h2 class="section-title reveal">סרטונים ש<span class="gradient-text">יצרנו</span></h2>
+      </div>
+      <div class="video-gallery">
+        <div class="video-card reveal">
+          <video src="https://base44.app/api/apps/6a3d056a2bb5f618e6613662/files/mp/public/6a3d056a2bb5f618e6613662/e00d5d2af_hotel_marguah.mp4" controls playsinline preload="metadata"></video>
+          <div class="video-card-body"><span class="vc-tag">מלונאות · קמפיין חג</span><h3>מלון מרגוע נתניה</h3><p>סרטון קמפיין לראש השנה מול הים — הפקה ועריכה מלאה.</p></div>
+        </div>
+        <div class="video-card wide reveal">
+          <video src="https://base44.app/api/apps/6a3d056a2bb5f618e6613662/files/mp/public/6a3d056a2bb5f618e6613662/1dd5f9307_8123177ed_metro_stay_video_2026mp4.mp4" controls playsinline preload="metadata"></video>
+          <div class="video-card-body"><span class="vc-tag">מלונאות · ריל</span><h3>Metro Stay</h3><p>סרטון תדמית למלון בוטיק בפורמט ריבועי לרשתות.</p></div>
+        </div>
+        <div class="video-card reveal">
+          <video src="https://base44.app/api/apps/6a3d056a2bb5f618e6613662/files/mp/public/6a3d056a2bb5f618e6613662/38c510c6a_video2.mp4" controls playsinline preload="metadata"></video>
+          <div class="video-card-body"><span class="vc-tag">קמפיין · רשתות</span><h3>סרטון קמפיין</h3><p>תוכן אנכי לאינסטגרם וטיקטוק — קצב, מוזיקה וכתוביות.</p></div>
+        </div>
+        <div class="video-card reveal">
+          <video src="https://base44.app/api/apps/6a3d056a2bb5f618e6613662/files/mp/public/6a3d056a2bb5f618e6613662/8fcbdef60_ded38d291_WhatsAppVideo2026-06-25at172737.mp4" controls playsinline preload="metadata"></video>
+          <div class="video-card-body"><span class="vc-tag">סושיאל · ריל</span><h3>תוכן רשתות חברתיות</h3><p>ריל קצר ואנרגטי שמביא צפיות ומעורבות.</p></div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:56px;" class="reveal"><a href="contact.html" class="btn btn-primary">הפרויקט הבא הוא שלך</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag reveal">קמפיינים מוצלחים</span>
+        <h2 class="section-title reveal">קריאייטיב, מדיה ו<span class="gradient-text">תוצאות</span></h2>
+        <p class="section-subtitle reveal">אנחנו משלבים אסטרטגיה, תוכן וידאו, פרסום ממומן ואוטומציות כדי לבנות קמפיינים שנראים יוקרתיים — אבל עובדים כמו מכונת ביצועים.</p>
+      </div>
+      <div class="campaign-grid">
+        <div class="campaign-card reveal">
+          <span class="cc-tag">Performance Marketing</span>
+          <h3>קמפיינים ממומנים שמכוונים ללידים</h3>
+          <p>בניית משפכי פרסום לפייסבוק, אינסטגרם וגוגל עם מסרים מדויקים, קהלים חכמים ודפי נחיתה מהירים.</p>
+          <div class="campaign-metrics">
+            <div><div class="cm-num">Lead</div><div class="cm-label">מיקוד בהמרות</div></div>
+            <div><div class="cm-num">CRO</div><div class="cm-label">שיפור יחס המרה</div></div>
+          </div>
+        </div>
+        <div class="campaign-card reveal">
+          <span class="cc-tag">Social Content</span>
+          <h3>רילסים וסרטונים שמייצרים עניין</h3>
+          <p>הפקות קצרות, חדות ומותאמות לרשתות — עם קצב, עריכה, סאונד וויזואל שמושכים צפייה ומעלים מעורבות.</p>
+          <div class="campaign-metrics">
+            <div><div class="cm-num">Reels</div><div class="cm-label">תוכן קצר</div></div>
+            <div><div class="cm-num">UGC</div><div class="cm-label">קריאייטיב אותנטי</div></div>
+          </div>
+        </div>
+        <div class="campaign-card reveal">
+          <span class="cc-tag">AI Automation</span>
+          <h3>אוטומציות שמחברות בין פרסום למכירות</h3>
+          <p>חיבור טפסים, וואטסאפ, CRM ודאטה כדי שכל ליד יקבל טיפול מהיר, מסודר ומדיד.</p>
+          <div class="campaign-metrics">
+            <div><div class="cm-num">CRM</div><div class="cm-label">מעקב לידים</div></div>
+            <div><div class="cm-num">AI</div><div class="cm-label">תהליכים חכמים</div></div>
+          </div>
+        </div>
+      </div>
+      <div class="results-grid">
+        <div class="result-card reveal"><div class="result-num">01</div><h4>אסטרטגיה</h4><p>מגדירים קהל, מסר, הצעה ויעדי קמפיין.</p></div>
+        <div class="result-card reveal"><div class="result-num">02</div><h4>קריאייטיב</h4><p>מייצרים וידאו, מודעות ודפי נחיתה שמרגישים פרימיום.</p></div>
+        <div class="result-card reveal"><div class="result-num">03</div><h4>מדידה</h4><p>עוקבים אחרי ביצועים ומשפרים לפי נתונים.</p></div>
+        <div class="result-card reveal"><div class="result-num">04</div><h4>סקייל</h4><p>מגדילים תקציבים רק כשהמספרים עובדים.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"><div class="container"><div class="footer-grid"><div class="footer-brand"><img src="assets/shapo-logo.jpg" alt="Shapo Digital" /><p>שאפו דיגיטל — סוכנות פרסום דיגיטלית פרימיום.</p></div><div class="footer-col"><h4>שירותים</h4><a href="web.html">בניית אתרים</a><a href="services.html">אוטומציות AI</a><a href="video.html">הפקת וידאו</a></div><div class="footer-col"><h4>חברה</h4><a href="about.html">אודות</a><a href="courses.html">קורסים</a><a href="contact.html">צור קשר</a></div><div class="footer-col"><h4>צור קשר</h4><a href="https://wa.me/972508563777">WhatsApp</a><a href="tel:+972508563777">טלפון</a><a href="https://instagram.com/shapodigital">Instagram</a></div></div><div class="footer-bottom">© 2026 Shapo Digital · מישל זוויגי · כל הזכויות שמורות</div></div></footer>
+  <div class="float-btns">
+    <a href="https://wa.me/972508563777" class="float-btn whatsapp" target="_blank" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="#fff"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.7.9-.9 1.1-.2.2-.3.2-.6.1-1.7-.8-2.8-1.5-3.9-3.4-.3-.5.3-.5.8-1.5.1-.2 0-.4 0-.5 0-.1-.7-1.6-.9-2.2-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.4s1 2.8 1.2 3c.1.2 2 3.1 4.9 4.3 1.8.8 2.5.9 3.4.8.5-.1 1.7-.7 1.9-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3z"/><path d="M12 2C6.5 2 2 6.5 2 12c0 1.8.5 3.4 1.3 4.9L2 22l5.3-1.3c1.4.8 3 1.2 4.7 1.2 5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.5 0-3-.4-4.2-1.2l-.3-.2-3.1.8.8-3-.2-.3C4.4 14.7 4 13.4 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg></a>
+    <a href="tel:+972508563777" class="float-btn phone" aria-label="טלפון"><svg viewBox="0 0 24 24" fill="none" stroke="#0a0a0c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
