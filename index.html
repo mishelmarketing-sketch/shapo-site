@@ -9,9 +9,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Assistant:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pro.css" />
   <link rel="icon" href="assets/shapo-logo.jpg" />
 </head>
 <body>
+  <div class="scroll-progress"></div>
+  <div class="grain"></div>
 
   <!-- NAVBAR -->
   <nav class="navbar">
@@ -39,149 +42,116 @@
     </div>
   </nav>
 
+  
   <!-- HERO -->
   <header class="hero">
-    <div class="hero-glow"></div>
+    <div class="hero-orb"></div>
     <div class="container hero-content">
-      <span class="section-tag reveal">סוכנות דיגיטל פרימיום</span>
-      <h1 class="reveal">אנחנו בונים <span class="gradient-text">חוויות דיגיטליות</span><br/>ברמה אחרת לגמרי</h1>
-      <p class="hero-subtitle reveal">שאפו דיגיטל מתמחה בבניית אתרים בארכיטקטורת Serverless Edge, אוטומציות AI, וניהול קמפיינים חכמים מבוססי דאטה. ביצועים ללא פשרות, עיצוב ללא תחרות.</p>
-      <div class="hero-cta reveal">
-        <a href="contact.html" class="btn btn-primary">בואו נתחיל פרויקט</a>
-        <a href="services.html" class="btn btn-outline">לכל השירותים</a>
+      <span class="hero-kicker r"><span class="dot"></span> סוכנות דיגיטל · Serverless Edge · AI</span>
+      <h1>
+        <span class="line"><span>בונים מותגים</span></span>
+        <span class="line"><span>שנראים <em class="shine" style="font-style:normal">יקרים</em></span></span>
+        <span class="line"><span>ועובדים כמו מכונה</span></span>
+      </h1>
+      <p class="hero-sub">שאפו דיגיטל מתכננת ובונה נכסים דיגיטליים ברמת סטודיו — אתרים מהירים בארכיטקטורת Serverless Edge, אוטומציות AI, וידאו וקמפיינים מבוססי דאטה. עיצוב מוקפד, ביצועים בלי פשרות.</p>
+      <div class="hero-actions">
+        <a href="contact.html" class="btn btn-primary">בואו נתחיל פרויקט →</a>
+        <a href="portfolio.html" class="btn btn-outline">לצפייה בעבודות</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hs"><b data-count="120">0</b><span>פרויקטים שהושקו</span></div>
+        <div class="div"></div>
+        <div class="hs"><b data-count="5">0</b><span>שנות מומחיות</span></div>
+        <div class="div"></div>
+        <div class="hs"><b data-count="98" data-suffix="%">0</b><span>שביעות רצון לקוחות</span></div>
       </div>
     </div>
   </header>
 
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag reveal">מה אנחנו עושים</span>
-        <h2 class="section-title reveal">שירותים <span class="gradient-text">ברמת בוטיק</span></h2>
-        <p class="section-subtitle reveal">שמונה תחומי מומחיות, סטנדרט אחד — מצוינות.</p>
-      </div>
-
-      <div class="services-grid">
-        <!-- 1 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
-          <h3>בניית אתרי אינטרנט</h3>
-          <p>אתרים בארכיטקטורת Serverless Edge — מהירות טעינה מטורפת, אבטחה מקסימלית ויציבות מוחלטת. עיצוב מותאם אישית שמדבר את שפת המותג שלך.</p>
-          <a href="web.html" class="service-link">קרא עוד ←</a>
-        </div>
-        <!-- 2 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
-          <h3>איתור דאטה לקמפיינים חכמים</h3>
-          <p>סקרייפינג ואיסוף דאטה מתקדם מבוסס AI. אנחנו מוצאים בדיוק את הקהל שלך, מנתחים התנהגות וממקדים תקציבים להחזר מקסימלי.</p>
-          <a href="services.html" class="service-link">קרא עוד ←</a>
-        </div>
-        <!-- 3 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M4.9 4.9l2.8 2.8M16.3 16.3l2.8 2.8M2 12h4M18 12h4M4.9 19.1l2.8-2.8M16.3 7.7l2.8-2.8"/></svg></div>
-          <h3>אוטומציות והנדסת AI</h3>
-          <p>בניית מערכות אוטומציה חכמות שעובדות בשבילך 24/7. תהליכים, פולואו-אפים, ואינטגרציות AI שחוסכות זמן ומכפילות תוצאות.</p>
-          <a href="services.html" class="service-link">קרא עוד ←</a>
-        </div>
-        <!-- 4 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 11l5-5 5 5M12 6v12"/><circle cx="12" cy="20" r="1"/></svg></div>
-          <h3>ניהול קמפיינים בסושיאל</h3>
-          <p>אסטרטגיה, תוכן וניהול שוטף של קמפיינים בפייסבוק, אינסטגרם וטיקטוק. קריאייטיב שעוצר את האצבע ומביא לידים איכותיים.</p>
-          <a href="services.html" class="service-link">קרא עוד ←</a>
-        </div>
-        <!-- 5 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></div>
-          <h3>קמפיינים בגוגל</h3>
-          <p>Google Ads, Search ו-Performance Max ברמת מומחה. אופטימיזציה מתמדת מבוססת דאטה כדי להשיג את העלות הנמוכה ביותר להמרה.</p>
-          <a href="services.html" class="service-link">קרא עוד ←</a>
-        </div>
-        <!-- 6 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="M16 9l6-3v12l-6-3"/></svg></div>
-          <h3>הפקת סרטונים וימי צילום</h3>
-          <p>הפקות וידאו מקצועיות, ימי צילום מתוכננים ועריכה קולנועית. תוכן ויזואלי שמספר את הסיפור של המותג ברמה הגבוהה ביותר.</p>
-          <a href="video.html" class="service-link">קרא עוד ←</a>
-        </div>
-        <!-- 7 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6 4.4 2.3 7.2-6.3-4.6L5.7 21 8 14 2 9.6h7.6z"/></svg></div>
-          <h3>הפקת סרטונים ב-AI</h3>
-          <p>סרטונים מרהיבים שנוצרים בעזרת בינה מלאכותית מתקדמת. אווטארים, אנימציות ותוכן וידאו בקנה מידה — מהיר, חסכוני ומדהים.</p>
-          <a href="video.html" class="service-link">קרא עוד ←</a>
-        </div>
-        <!-- 8 -->
-        <div class="service-card reveal">
-          <div class="service-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M9 9h6v6H9z"/><path d="M3 9h2M3 15h2M19 9h2M19 15h2M9 3v2M15 3v2M9 19v2M15 19v2"/></svg></div>
-          <h3>בוטים ואפליקציות לעסקים</h3>
-          <p>פיתוח בוטים חכמים ואפליקציות מותאמות אישית. WhatsApp Bots, צ'אטבוטים מבוססי AI וכלים דיגיטליים שמייעלים את העסק.</p>
-          <a href="services.html" class="service-link">קרא עוד ←</a>
-        </div>
-      </div>
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span>Serverless Edge</span><span>AI Automation</span><span>Performance Marketing</span><span>Web Design</span><span>Video Production</span><span>Data Scraping</span>
+      <span>Serverless Edge</span><span>AI Automation</span><span>Performance Marketing</span><span>Web Design</span><span>Video Production</span><span>Data Scraping</span>
     </div>
-  </section>
+  </div>
 
-  <!-- CTA BANNER -->
-  <section style="padding:80px 0;">
-    <div class="container">
-      <div style="background:var(--grad-card);border:1px solid var(--border-mid);border-radius:var(--radius-xl);padding:64px 48px;text-align:center;position:relative;overflow:hidden;" class="reveal">
-        <div class="hero-glow" style="top:-30%;"></div>
-        <h2 class="section-title" style="position:relative;">מוכנים <span class="gradient-text">לשדרג</span> את הנוכחות הדיגיטלית?</h2>
-        <p class="section-subtitle" style="margin-bottom:32px;position:relative;">בואו נדבר על הפרויקט הבא שלכם. פגישת ייעוץ ראשונה ללא עלות.</p>
-        <a href="contact.html" class="btn btn-primary" style="position:relative;">קבעו פגישת ייעוץ</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-
+  <!-- SERVICES / BENTO -->
   <section class="section">
     <div class="container">
-      <div class="section-header">
-        <span class="section-tag reveal">קמפיינים מוצלחים</span>
-        <h2 class="section-title reveal">קריאייטיב, מדיה ו<span class="gradient-text">תוצאות</span></h2>
-        <p class="section-subtitle reveal">אנחנו משלבים אסטרטגיה, תוכן וידאו, פרסום ממומן ואוטומציות כדי לבנות קמפיינים שנראים יוקרתיים — אבל עובדים כמו מכונת ביצועים.</p>
-      </div>
-      <div class="campaign-grid">
-        <div class="campaign-card reveal">
-          <span class="cc-tag">Performance Marketing</span>
-          <h3>קמפיינים ממומנים שמכוונים ללידים</h3>
-          <p>בניית משפכי פרסום לפייסבוק, אינסטגרם וגוגל עם מסרים מדויקים, קהלים חכמים ודפי נחיתה מהירים.</p>
-          <div class="campaign-metrics">
-            <div><div class="cm-num">Lead</div><div class="cm-label">מיקוד בהמרות</div></div>
-            <div><div class="cm-num">CRO</div><div class="cm-label">שיפור יחס המרה</div></div>
+      <span class="eyebrow r">מה אנחנו עושים</span>
+      <h2 class="h-sec r">יכולת מלאה <span class="shine">תחת קורת גג אחת</span></h2>
+      <p class="sub-sec r">לא עוד ספק בודד. שאפו דיגיטל מחברת אסטרטגיה, טכנולוגיה וקריאייטיב למערכת אחת שמייצרת תוצאות.</p>
+
+      <div class="bento">
+        <div class="tile feature r">
+          <div>
+            <div class="ti"><svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>אתרים ב-Serverless Edge</h3>
+            <p>אתרים שנטענים מיד, מאובטחים ויציבים — נבנים על תשתית Edge מבוזרת. עיצוב מותאם אישית שמדבר את שפת המותג, עם חוויית משתמש ברמת בוטיק.</p>
           </div>
+          <a href="web.html" class="more">לפרטים על בניית אתרים →</a>
         </div>
-        <div class="campaign-card reveal">
-          <span class="cc-tag">Social Content</span>
-          <h3>רילסים וסרטונים שמייצרים עניין</h3>
-          <p>הפקות קצרות, חדות ומותאמות לרשתות — עם קצב, עריכה, סאונד וויזואל שמושכים צפייה ומעלים מעורבות.</p>
-          <div class="campaign-metrics">
-            <div><div class="cm-num">Reels</div><div class="cm-label">תוכן קצר</div></div>
-            <div><div class="cm-num">UGC</div><div class="cm-label">קריאייטיב אותנטי</div></div>
-          </div>
+        <div class="tile col-3 r d1">
+          <div class="ti"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.9 4.9l2 2M17.1 17.1l2 2M2 12h3M19 12h3M4.9 19.1l2-2M17.1 6.9l2-2"/></svg></div>
+          <h3>אוטומציות והנדסת AI</h3>
+          <p>מערכות שעובדות בשבילך 24/7 — פולואו-אפים, אינטגרציות וצ'אטבוטים חכמים שחוסכים זמן ומכפילים תוצאות.</p>
+          <a href="services.html" class="more">קרא עוד →</a>
         </div>
-        <div class="campaign-card reveal">
-          <span class="cc-tag">AI Automation</span>
-          <h3>אוטומציות שמחברות בין פרסום למכירות</h3>
-          <p>חיבור טפסים, וואטסאפ, CRM ודאטה כדי שכל ליד יקבל טיפול מהיר, מסודר ומדיד.</p>
-          <div class="campaign-metrics">
-            <div><div class="cm-num">CRM</div><div class="cm-label">מעקב לידים</div></div>
-            <div><div class="cm-num">AI</div><div class="cm-label">תהליכים חכמים</div></div>
-          </div>
+        <div class="tile col-3 r d2">
+          <div class="ti"><svg viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg></div>
+          <h3>קמפיינים מבוססי דאטה</h3>
+          <p>Meta, Google ו-TikTok ברמת מומחה. סקרייפינג קהלים, מיקוד חכם ואופטימיזציה מתמדת לעלות המרה נמוכה.</p>
+          <a href="services.html" class="more">קרא עוד →</a>
         </div>
-      </div>
-      <div class="results-grid">
-        <div class="result-card reveal"><div class="result-num">01</div><h4>אסטרטגיה</h4><p>מגדירים קהל, מסר, הצעה ויעדי קמפיין.</p></div>
-        <div class="result-card reveal"><div class="result-num">02</div><h4>קריאייטיב</h4><p>מייצרים וידאו, מודעות ודפי נחיתה שמרגישים פרימיום.</p></div>
-        <div class="result-card reveal"><div class="result-num">03</div><h4>מדידה</h4><p>עוקבים אחרי ביצועים ומשפרים לפי נתונים.</p></div>
-        <div class="result-card reveal"><div class="result-num">04</div><h4>סקייל</h4><p>מגדילים תקציבים רק כשהמספרים עובדים.</p></div>
+        <div class="tile col-2 r d1">
+          <div class="ti"><svg viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="14" rx="2"/><path d="M16 9l6-3v12l-6-3"/></svg></div>
+          <h3>הפקת וידאו</h3>
+          <p>ימי צילום, עריכה קולנועית וסרטוני AI — תוכן שמשאיר חותם.</p>
+          <a href="video.html" class="more">לתיק הווידאו →</a>
+        </div>
+        <div class="tile col-2 r d2">
+          <div class="ti"><svg viewBox="0 0 24 24"><path d="M7 11l5-5 5 5M12 6v12"/><circle cx="12" cy="20" r="1"/></svg></div>
+          <h3>סושיאל וקריאייטיב</h3>
+          <p>אסטרטגיה, תוכן וניהול שוטף שעוצרים את האצבע ומביאים לידים.</p>
+          <a href="services.html" class="more">קרא עוד →</a>
+        </div>
+        <div class="tile col-2 r d3">
+          <div class="ti"><svg viewBox="0 0 24 24"><path d="M4 19V5a2 2 0 0 1 2-2h9l5 5v11a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2z"/><path d="M9 9h4M9 13h6M9 17h6"/></svg></div>
+          <h3>קורסים והדרכות</h3>
+          <p>ידע מהשטח — מישל זוויגי מעביר את אותן שיטות שמניעות לקוחות.</p>
+          <a href="courses.html" class="more">לקורסים →</a>
+        </div>
       </div>
     </div>
   </section>
-  <footer class="footer">
+
+  <!-- PROCESS -->
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <span class="eyebrow r">איך עובדים איתנו</span>
+      <h2 class="h-sec r">תהליך נקי, <span class="shine">תוצאה מדויקת</span></h2>
+      <div class="steps">
+        <div class="step r d1"><div class="n">01</div><h4>אבחון ואסטרטגיה</h4><p>מבינים את העסק, הקהל והמטרות — ובונים תוכנית מדידה ברורה.</p></div>
+        <div class="step r d2"><div class="n">02</div><h4>עיצוב ובינוי</h4><p>מעצבים ומפתחים נכס מהיר, יוקרתי ומותאם מובייל עד הפרט האחרון.</p></div>
+        <div class="step r d3"><div class="n">03</div><h4>השקה וקמפיין</h4><p>מעלים לאוויר, מחברים אוטומציות ומפעילים קמפיינים ממוקדי המרה.</p></div>
+        <div class="step r d4"><div class="n">04</div><h4>אופטימיזציה</h4><p>מנתחים דאטה, משפרים ומגדילים תוצאות לאורך זמן.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section" style="padding-top:0;">
+    <div class="cta-band r">
+      <div class="cta-inner">
+        <h2>מוכנים לבנות משהו <span class="shine">ברמה אחרת</span>?</h2>
+        <p>נדבר 15 דקות, נבין מה אתם צריכים, ונראה לכם בדיוק איך מגיעים לשם.</p>
+        <a href="contact.html" class="btn btn-primary">דברו איתנו עכשיו →</a>
+      </div>
+    </div>
+  </section>
+
+<footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
@@ -225,5 +195,6 @@
   </div>
 
   <script src="js/main.js"></script>
+  <script src="js/pro.js"></script>
 </body>
 </html>
